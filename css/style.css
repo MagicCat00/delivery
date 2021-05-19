@@ -1,0 +1,272 @@
+@font-face {
+    font-family: Pop-bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: Pop-light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: Pop-medium;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: Pop-reg;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Pop-bold2;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+.container {
+    width: 85%;
+    max-width: 1300px;
+    margin: auto; 
+}
+body {
+    font-family: Pop-medium;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    outline: none;
+}
+.section {
+    padding: 168px 0px;
+}
+.title {
+    font-size: 50px;
+    letter-spacing: 4px;
+}
+/*верхнее меню*/
+.header__up {
+    background-color: #ba0000;
+    color: white;
+}
+.sel {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    font-family: Pop-medium;
+}
+.sel-color {
+    color:#ba0000;
+}
+.hero__button {
+    font-family: Pop-bold;
+}
+.header-one__info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.header-one__info-text_2 {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+.header-one-text {
+    padding: 15px 0px;
+    font-size: 15px;
+}
+.hero__contact {
+    background: url(../img/icon.svg) no-repeat center / cover;
+}
+/*нижнее меню*/
+.header__down {
+    background-color: #ffcc00;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+.menu__logo {
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+.menu__nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
+.nav__item {
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 45px 45px;
+    text-decoration: 0;
+    color: #ba0000;
+    position: relative;
+}
+.nav__item:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0px;/*задаём длинну линии до наведения курсора*/
+	height: 5px; /*задаём ширину линии*/
+    margin-top: 40px;
+	background-color: #ba0000; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.nav__item:hover:after,
+.nav__item:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+/*hero*/
+.hero {
+    position: relative;
+    background: linear-gradient(to right, #ba0000 40%, transparent),
+    url(../img/bg_hero.png) no-repeat center / cover;
+}
+.hero__title {
+    font-size: 70px;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 75px;
+    position: relative;
+}
+.hero__title::before {
+    content: '';
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    border-bottom: 5px solid #ffcc00;
+}
+.hero__subtitle {
+    max-width: 700px;
+    width: 100%;
+    margin-bottom: 35px;
+    font-size: 20px;
+    color:#ffcc00;
+}
+.hero__text__down {
+    color: white;
+    margin-bottom: 35px;
+    font-size: 28px;
+}
+.hero__button {
+    padding: 20px 45px;
+    border: 1px solid ;
+    font-size: 17px;
+    background: transparent;
+    border-radius: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+.hero--primary {
+    position: relative;
+    color: #ba0000;
+    background-color:#ffcc00;
+    border: none;
+    margin-right: 30px;
+}
+.hero--primary:hover {
+    box-shadow: #ffcc00 0 0 15px;
+}
+/*services*/
+.services {
+
+}
+.services__title {
+    color: #ba0000;
+    margin-bottom: 110px;
+    position: relative;
+    z-index: 3;
+}
+.services__title__back {
+    position: absolute;
+    top: 1102px;
+    left: 360px;
+    font-size: 140px;
+    font-family: Pop-bold;
+    z-index: 2;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #f8f8f8;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    max-width: 300px;
+    width: 100%;
+    margin: 10px;
+    background-color: #fcf9f9;
+}
+.card__content {
+    padding: 20px 20px;
+    padding-bottom: 30px;
+}
+.card__img {
+    margin-bottom: 20px;
+    max-width: 300px;
+    width: 100%;
+}
+.card__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Pop-bold;
+    color: #ba0000;
+}
+.card__subtitle {
+    color: #898989;
+    font-family: Pop-light;
+}
+.card__read {
+    margin-top: 20px;
+    font-family: Pop-bold;
+    color: black;
+}
+.anim:hover,
+:active {
+    box-shadow: #898989 0 0 15px;
+}
+.services__card_1 {
+    background-color: #ba0000;
+    padding: 40px;
+}
+.services__card__title_1 {
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-family: Pop-bold;
+    color:white;
+    position: relative;
+}
+.services__card__title_1::before {
+    content: '';
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 75px;
+    height: 1px;
+    border-bottom: 1px solid #ffcc00;
+}
+.services__card__subtitle_1 {
+    color:white;
+}
+.services__button {
+    padding: 20px 45px;
+    border: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #ba0000;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-family: Pop-bold;
+    margin-top: 170px;
+}
