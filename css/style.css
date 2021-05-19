@@ -177,9 +177,7 @@ button {
     box-shadow: #ffcc00 0 0 15px;
 }
 /*services*/
-.services {
 
-}
 .services__title {
     color: #ba0000;
     margin-bottom: 110px;
@@ -205,11 +203,6 @@ button {
     max-width: 300px;
     width: 100%;
     margin: 10px;
-    background-color: #fcf9f9;
-}
-.card__content {
-    padding: 20px 20px;
-    padding-bottom: 30px;
 }
 .card__img {
     margin-bottom: 20px;
@@ -232,13 +225,11 @@ button {
     font-family: Pop-bold;
     color: black;
 }
-.anim:hover,
-:active {
-    box-shadow: #898989 0 0 15px;
-}
+
 .services__card_1 {
     background-color: #ba0000;
     padding: 40px;
+    height: 398px;
 }
 .services__card__title_1 {
     margin-bottom: 50px;
@@ -268,5 +259,5 @@ button {
     border-radius: 40px;
     text-transform: uppercase;
     font-family: Pop-bold;
-    margin-top: 170px;
+    margin-top: 115px;
 }
