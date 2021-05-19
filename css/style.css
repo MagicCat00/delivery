@@ -104,7 +104,7 @@ button {
     text-transform: uppercase;
     font-size: 15px;
     padding: 45px 45px;
-    text-decoration: 0;
+    text-decoration: none;
     color: #ba0000;
     position: relative;
 }
@@ -260,4 +260,53 @@ button {
     text-transform: uppercase;
     font-family: Pop-bold;
     margin-top: 115px;
+}
+/*адаптация*/
+@media screen and (max-width: 1500px) {
+    .services__title__back {
+        display: none;
+    }
+    .card-main {
+        margin-right: 25px;
+    }
+}
+@media screen and (max-width: 1350px) {
+    .container {
+        width: 80%;
+        max-width: 1350px;
+    }
+    .menu__nav {
+        flex-wrap: wrap;
+    }
+    .cards {
+        flex-wrap: wrap;
+    }
+    .services__card_1 {
+        margin: auto;
+        margin-top: 70px;
+        width: 100%;
+        max-width: 600px;
+    }
+    .services__button {
+        margin-top: 140px;
+    }
+    .card-main {
+        margin-right: 5px;
+    }
+    .services__title {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 1220px) {
+    .card__main__none {
+        display: none;
+    }
+    .services__card_1 {
+        margin: auto;
+        margin-top: 70px;
+    }
+    .cards {
+        justify-content: space-around;
+    }
+    
 }
