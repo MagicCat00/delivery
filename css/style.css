@@ -171,13 +171,14 @@ button {
     color: #ba0000;
     background-color:#ffcc00;
     border: none;
-    margin-right: 30px;
 }
 .hero--primary:hover {
     box-shadow: #ffcc00 0 0 15px;
 }
+.button-margin {
+    margin-left: 30px;
+}
 /*services*/
-
 .services__title {
     color: #ba0000;
     margin-bottom: 110px;
@@ -266,9 +267,6 @@ button {
     url(../img/plane2.png) no-repeat center / cover;
     margin-bottom: 300px;
 }
-.provider__block {
-    
-}
 .provider__title {
     color: white;
     display: flex;
@@ -299,6 +297,164 @@ button {
     margin-top: -10px;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.5);
 }
+/*excel*/
+.excel {
+    background: #ba0000;
+    padding: 100px 0px;
+}
+.excel__block {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.excel__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.excel__subtitle {
+    max-width: 700px;
+    width: 100%;
+    font-family: Pop-light;
+    font-size: 16px;
+}
+.excel__button {
+    display: flex;
+    align-items: center;
+}
+.button__excel {
+    color: white;
+    background-color: #a00000;
+    padding: 20px 35px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-family: Pop-bold;
+    text-transform: uppercase;
+}
+.button__excel:hover {
+    box-shadow: #ff6e6e 0 0 15px;
+}
+/*firms*/
+.firms {
+    padding: 70px 0px;
+}
+.firms__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.firm__content {
+    background-color: #f9f9f9;
+    padding: 40px 30px;
+    border: 1px solid #eedcdc;
+    margin: 5px;
+}
+.firm__content-1 {
+    padding: 46px 33px;
+}
+.firm__content-2 {
+    padding: 40px 35px;
+}
+.firm__content-3 {
+    padding: 39px 35px;
+}
+.firm__content-4 {
+    padding: 47px 35px;
+}
+.bitton__excel-hover:hover {
+    border: 1px solid #b90000;
+}
+/*footer*/
+.footer {
+    position: relative;
+}
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.footer__content {
+    max-width: 1000px;
+    width: 100%;
+}
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer__menu-f {
+    margin-right: 90px;
+}
+.footer__menu-3:last-of-type {
+    margin: 0;
+}
+.menu__footer {
+    display: flex;
+    flex-direction: column;
+}
+.footer__menu__title {
+    color: #ba0000;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: Pop-bold;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.menu__item-footer {
+    color: #777777;
+    text-transform: uppercase;
+    font-family: Pop-bold;
+    font-size: 16px;
+    padding: 3px;
+    margin-left: 10px;
+}
+.menu__item-footer:hover {
+    color: #ffcc00;
+}
+.menu__item-footer-1:hover {
+    color: #017edf;
+}
+.menu__item-footer-2:hover {
+    color: #ea4c89;
+}
+.menu__item-footer-3:hover {
+    color: #017edf;
+}
+.menu__item-footer-4:hover {
+    color: #c71610;
+}
+.menu__item-footer-5:hover {
+    color: #1faee9;
+}
+.footer__img {
+    position: relative;
+    z-index: 2;
+}
+.footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 311px;
+    background:  #ba0000;
+    z-index: 10;
+}
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 311px;
+    background:  #ffcc00;
+    z-index: 10;
+}
 /*адаптация*/
 @media screen and (max-width: 1500px) {
     .services__title__back {
@@ -306,6 +462,9 @@ button {
     }
     .card-main {
         margin-right: 25px;
+    }
+    .provider__title {
+        padding: 0px 60px;
     }
 }
 @media screen and (max-width: 1350px) {
@@ -346,5 +505,36 @@ button {
     .cards {
         justify-content: space-around;
     }
-    
+}
+@media screen and (max-width: 1120px) {
+    .button__excel {
+        margin-top: 40px;
+        text-align: right;
+        align-items: flex-end;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+@media screen and (max-width: 800px) {
+    .firms__block {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 610px) {
+    .hero__bittons {
+        text-align: right;
+        align-items: flex-end;
+    }
+    .primary__margin {
+        margin: 0;
+    }
+    .button-margin {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .cards__button {
+        text-align: right;
+        align-items: flex-end;
+    }
 }
