@@ -261,7 +261,7 @@ button {
     margin-top: 30px;
 }
 .services__button {
-    padding: 20px 45px;
+    padding: 15px 40px;
     border: none;
     font-size: 17px;
     text-transform: uppercase;
@@ -269,7 +269,8 @@ button {
     border-radius: 40px;
     text-transform: uppercase;
     font-family: Pop-bold;
-    margin-top: 30px;
+    margin-top: 40px;
+    letter-spacing: 1px;
 }
 .services__button__form {
     padding: 10px 20px;
@@ -287,6 +288,9 @@ button {
 .services__button__form-bottom:hover {
     box-shadow: #ffcc00 0 0 15px;
     transition: 0.4s;
+}
+.services__form__text {
+    color: #ba0000;
 }
 /*provider*/
 .provider {
@@ -392,6 +396,8 @@ button {
 .button__form-right:hover {
     background: #ffcc00;
     transition: 0.4s;
+    color: #ba0000;
+    border: 3px solid #ffcc00;
 }
 .form__text {
     transform: rotate(90deg);
